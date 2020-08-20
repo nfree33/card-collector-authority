@@ -13,5 +13,22 @@ router.get('/', (req,res)=>{
     });
 });
 
+//NEW
+router.get('/new', (req,res)=>{
+    res.render('cards/New')
+})
+
+//DELETE
+
+//UPDATE
+
+//CREATE
+
+//EDIT
+
+//SHOW
+
+
+
 //EXPORT ROUTER
 module.exports = router

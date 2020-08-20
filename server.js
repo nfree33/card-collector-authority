@@ -44,7 +44,7 @@ app.get('/' , (req, res) => {
 });
 
 //CONTROLLER
-const  cardsController = require('./controllers/cards.js');
+const cardsController = require('./controllers/cards.js');
 app.use('/cards', cardsController)
 
 
