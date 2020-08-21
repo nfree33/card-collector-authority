@@ -19,8 +19,21 @@ router.get('/new', (req,res)=>{
 })
 
 //DELETE
+router.delete('/:id', (req,res)=>{
+    Card.findByIdAndDelete(req.params.id, (err, card)=>{
+        res.redirect('/cards')
+    })
+})
+
 
 //UPDATE
+router.put('/:id', (req,res)=>{
+    req.body.isRookie = req.body.isRookie === "on" ? true : false;
+    Card.findByIdAndUpdate(req.params.id, req.body, {
+        new: true }, (error, updatedModel) =>{
+            res.redirect('/cards')
+    })
+})
 
 //CREATE
 router.post("/", (req, res) => {
@@ -35,6 +48,13 @@ router.post("/", (req, res) => {
     })
 })
 //EDIT
+router.get('/:id/edit', (req,res)=>{
+    Card.findById(req.params.id, (error, foundCard)=>{
+        res.render('cards/Edit', {
+            card: foundCard
+        })
+    })
+})
 
 //SHOW
 router.get('/:id', (req,res)=>{
