@@ -22,9 +22,9 @@ class Index extends React.Component{
                             <h3>Quantity: {card.quantity}</h3><br/>
                             <h3>${card.value}</h3><br/>
                             <h3>{card.isRookie ? 'Rookie Card!!' : 'Not Rookie'}</h3><br/>
-                            <form action={`/cards/${card._id}?_method=DELETE`} method="POST">
+                            {/* <form action={`/cards/${card._id}?_method=DELETE`} method="POST">
                                         <input type="submit" value="delete"/>
-                                    </form>
+                                    </form> */}
                             <h3><a href={`/cards/${card._id}/edit`}>Edit This Card</a></h3>
                                 </li>
                             )
