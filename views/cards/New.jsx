@@ -5,11 +5,11 @@ class New extends React.Component {
     render() {
         return (
             <Default>
-                <div className="container">
+                <div className="container-new">
                     <div className="sidebar-image"></div>
                     <div className="form-container">
                         <form action="/cards" method="POST" className="new-form">
-                            <h1 className="title">Add to the Collection</h1>
+                            <h1 className="title">Add Your Card</h1>
                 Name:      <input type="text" name="name" /><br />
                 Image (front):     <input type="text" name="imgFront" /><br />
                 Image (back):     <input type="text" name="imgBack" /><br />
