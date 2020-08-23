@@ -37,11 +37,22 @@ app.engine('jsx', require('express-react-views').createEngine());
 app.use(methodOverride('_method'));
 
 
-
+//STATIC PAGES
 
 app.get('/' , (req, res) => {
-  res.send('Best online card store ever!');
+  res.render('static/Home');
 });
+
+app.get('/about', (req, res) => {
+    res.render('static/About')
+})
+app.get('/contact-us', (req, res) => {
+    res.render('static/ContactUs')
+})
+
+
+
+
 
 //CONTROLLER
 const cardsController = require('./controllers/cards.js');

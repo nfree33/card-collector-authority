@@ -1,9 +1,11 @@
 const React = require('react')
+const Default = require('../components/Default.jsx')
 
 class Edit extends React.Component{
     render(){
         const {_id, name, imgFront, imgBack, team, year, sport, condition, quantity, value, isRookie} = this.props.card
         return(
+            <Default>
             <div>
                 <h1>Edit your {name} Card</h1>
                 <form action={`/cards/${_id}?_method=PUT`} method="POST">
@@ -20,6 +22,7 @@ class Edit extends React.Component{
                 <input type="submit" name="" value="Submit Card"></input>
                 </form>
             </div>
+            </Default>
         )
     }
 }

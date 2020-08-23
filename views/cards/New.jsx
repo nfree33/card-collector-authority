@@ -1,8 +1,10 @@
 const React = require('react')
+const Default = require('../components/Default.jsx')
 
 class New extends React.Component{
     render(){
         return(
+            <Default>
             <div>
                 <h1>Add to the Collection</h1>
                 <form action="/cards" method="POST">
@@ -19,6 +21,7 @@ class New extends React.Component{
                 <input type="submit" name="" value="Submit Card"></input>
                 </form>
             </div>
+            </Default>
         )
     }
 }
