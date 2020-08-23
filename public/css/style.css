@@ -20,7 +20,7 @@
     grid-template-columns: 60% 40%;
     margin: 50px auto;
     width: 80vw;
-    height: 70vw;
+    height: 80vw;
     border-radius: 20px;
     background-image: url('/website_images/multiple_cards.jpg');
     background-size: cover;
@@ -31,7 +31,7 @@
     border: 1px solid black;
     border-radius: 20px;
     width: 100%;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     text-align: end;
     background-image: linear-gradient(to left, rgba(65,105,225,0.8),rgba(65,105,225,0.5));
@@ -42,6 +42,6 @@ input[type="submit"]:hover {
     background: var(--money-green);
     box-shadow: 2px 2px var(ghostwhite);
   }
-  /* .submit-button {
-
-  } */
+label {
+    display: block
+}

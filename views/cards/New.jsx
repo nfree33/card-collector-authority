@@ -10,15 +10,17 @@ class New extends React.Component {
                     <div className="form-container">
                         <form action="/cards" method="POST" className="new-form">
                             <h1 className="title">Add Your Card</h1>
-                Name:      <input type="text" name="name" /><br />
-                Image (front):     <input type="text" name="imgFront" /><br />
-                Image (back):     <input type="text" name="imgBack" /><br />
-                Team:      <input type="text" name="team" /><br />
-                Year:      <input type="text" name="year" />  <br />
-                Sport:     <input type="text" name="sport" /><br />
-                Condition: <input type="text" name="condition" /><br />
-                Quantity:  <input type="number" name="quantity" /><br />
-                Value:     <input type="number" name="value" /><br />
+                            <input type="text" name="name" placeholder="Name"/><br />
+
+                <input type="text" name="imgFront" placeholder="Image (front)"/><br />
+
+                 <input type="text" name="imgBack" placeholder="Image (back)"/><br />
+                    <input type="text" name="team"       placeholder="Team"  /><br />
+                    <input type="text" name="year"       placeholder="Year"  />  <br />
+                 <input type="text" name="sport"      placeholder="Sport"  /><br />
+                 <input type="text" name="condition"  placeholder="Condition"  /><br />
+                 <input type="number" name="quantity" placeholder="Quantity"  /><br />
+                    <input type="number" name="value"    placeholder="Value"  /><br />
                 Rookie Card: <input type="checkbox" name="isRookie" /><br />
                             <input type="submit" name="" value="Submit Card" className="btn btn-secondary"></input>
                         </form>
