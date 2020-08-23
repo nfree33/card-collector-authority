@@ -1,3 +1,42 @@
+:root {
+    --money-green: #85BB65;
+
+  }
 .card-back {
     background-image:  "/basketball/jordan_back.jpg";
 }
+.title {
+    text-align: center;
+    background-color: black;
+    opacity: 0.3;
+}
+.container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 50px auto;
+    width: 80vw;
+    height: 70vw;
+    border-radius: 20px;
+    background-image: url('/website_images/multiple_cards.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(ghostwhite, royalblue); */
+}
+.new-form {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    text-align: end;
+    background-image: linear-gradient(to left, rgba(255,165,0,0.8),rgba(255,165,0,0.5));
+    color: white;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    background: var(--money-green);
+    box-shadow: 2px 2px var(ghostwhite);
+  }
+  /* .submit-button {
+
+  } */

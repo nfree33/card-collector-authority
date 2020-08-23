@@ -8,13 +8,15 @@ class Index extends React.Component {
         return (
             <Default>
             <div>
-                <ul className="container d-flex p-4 flex-wrap">
+                <div className="container d-flex p-4 flex-wrap">
                     {
                         card.map((card, i) => {
                             return (
                                 <div className="card w-25">
                                     <h2>{card.name}</h2><br />
-                                    <div><a href={`/cards/${card._id}`}> <img src={card.imgFront} style={{ width: '100%' }} alt={card.name} /></a></div><br />
+                                    <div style={{  borderRadius: '10px'}} >
+                                        <a href={`/cards/${card._id}`}> 
+                                        <img src={card.imgFront} style={{ width: '100%', borderRadius: '10px' }} alt={card.name} /></a></div><br />
                                     {/* <h3><img src={card.imgBack} style={{width: '30%'}}alt={card.name}/></h3><br/> */}
                                     <h4>{card.team}</h4><br />
                                     <h4>{card.year}</h4><br />
@@ -23,15 +25,15 @@ class Index extends React.Component {
                                     <h3>Quantity: {card.quantity}</h3><br />
                                     <h3>${card.value}</h3><br />
                                     <h3>{card.isRookie ? 'Rookie Card!!' : 'Not Rookie'}</h3><br />
-                                    <form action={`/cards/${card._id}?_method=DELETE`} method="POST" disabled>
+                                    {/* <form action={`/cards/${card._id}?_method=DELETE`} method="POST" disabled>
                                         <input type="submit" value="delete"/>
-                                    </form>
+                                    </form> */}
                                     <h3><a href={`/cards/${card._id}/edit`}>Edit This Card</a></h3>
                                 </div>
                             )
                         })
                     }
-                </ul>
+                </div>
                 
             </div>
             </Default>
