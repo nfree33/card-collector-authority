@@ -49,6 +49,9 @@ app.get('/about', (req, res) => {
 app.get('/contact-us', (req, res) => {
     res.render('static/ContactUs')
 })
+app.get('/application', (req,res)=>{
+    res.render('static/Application')
+})
 
 
 
@@ -58,6 +61,9 @@ app.get('/contact-us', (req, res) => {
 const cardsController = require('./controllers/cards.js');
 app.use('/cards', cardsController)
 
+
+// const applicationsController = require('./controllers/applications.js');
+// app.use('/applications', applicationsController)
 
 
 

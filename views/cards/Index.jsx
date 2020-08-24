@@ -24,8 +24,8 @@ class Index extends React.Component {
                                     <h3>Condition: {card.condition}</h3><br />
                                     <h3>Quantity: {card.quantity}</h3><br /> */}
                                         <h3>${card.value}</h3><br />
-                                        <h3>{card.isRookie ? 'Rookie Card!!' : 'Not Rookie'}</h3><br />
-                                        {/* <form action={`/cards/${card._id}?_method=DELETE`} method="POST" disabled>
+                                        <h3>{card.isRookie ? 'Rookie Card' : 'Not Rookie'}</h3><br />
+                                        {/* <form action={`/cards/${card._id}?_method=DELETE`} method="POST">
                                         <input type="submit" value="delete"/>
                                     </form> */}
                                         <h4><a href={`/cards/${card._id}/edit`}>Edit This Card</a></h4>
@@ -49,7 +49,7 @@ class Index extends React.Component {
                                                     </div>
                                                     <div className="modal-footer">
                                                         <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                        <button type="button" className="btn btn-danger">Delete Card</button>
+                                                        <form action={`/cards/${card._id}?_method=DELETE`} method="POST"><input type="submit" className="btn btn-danger delete-button" value="Delete"/></form>
                                                         </div>
                                                 </div>
 

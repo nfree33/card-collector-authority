@@ -37,7 +37,7 @@
     background-image: linear-gradient(to left, rgba(65,105,225,0.8),rgba(65,105,225,0.5));
     color: white;
 }
-input[type="submit"]:hover {
+.submit-btn:hover {
     cursor: pointer;
     background: var(--money-green);
     box-shadow: 2px 2px var(ghostwhite);
@@ -52,8 +52,15 @@ label {
 .full-card{
     background-image: linear-gradient(rgba(255,215,0,1), rgb(255, 215, 0, 0))
 }
+.full-card-rookie{
+    background-image: linear-gradient(rgba(255,215,0,1), rgb(255, 215, 0, 0.5))
+}
 .delete-button{
-    background-color: red;
+    background-color: rgba(255,0,0,0.5);
+    color: white;
+}
+.delete-button:hover{
+    background-color: rgba(255,0,0,1);
     color: white;
 }
 #modal{
@@ -75,3 +82,20 @@ label {
 	line-height: 120%;
 	font-family: Arial;
 }
+.footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: ghostwhite;
+    color: royalblue;
+    text-align: center;
+  }
+
+  .footer-font{
+      font-size: .5em;
+
+  }

@@ -22,7 +22,7 @@ class New extends React.Component {
                             <input type="number" name="quantity" placeholder="Quantity" /><br />
                             <input type="number" name="value" placeholder="Value" /><br />
                 Rookie Card:<input type="checkbox" name="isRookie" /><br />
-                            <input type="submit" name="" value="Submit Card" className="btn btn-secondary"></input>
+                            <input type="submit" name="" value="Submit Card" className="btn btn-secondary submit-btn"></input>
                         </form>
                     </div>
                 </div>
