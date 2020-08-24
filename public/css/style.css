@@ -55,7 +55,6 @@ label {
 .delete-button{
     background-color: red;
     color: white;
-    width: 33%;
 }
 #modal{
     background-color: black;

@@ -1,6 +1,7 @@
 const React = require('react')
 
 class Default extends React.Component {
+
     render() {
         return (
             <html>
@@ -11,7 +12,7 @@ class Default extends React.Component {
                 </head>
                 <body>
                     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
-                        <a class="navbar-brand" href="#">Card are Cool</a>
+                        <a class="navbar-brand" href="#">Card Colector's Cooperative</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -52,7 +53,7 @@ class Default extends React.Component {
                     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
                     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./script/app.js"></script>
+                    <script src="../script/app.js"></script>
                 </body>
             </html>
         )

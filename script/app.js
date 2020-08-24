@@ -1,11 +1,13 @@
 $( ()=>{
 
 
-    console.log('js is connected')
-//GRABBING ELEMENTS
+console.log('js is connected')
 
+
+//GRABBING ELEMENTS
 const $openMod = $('#openModal')
 const $modal = $('#modal')
+
 
 //EVENT LISTENERS
 $openMod.on('click', (event)=>{
