@@ -2,6 +2,13 @@
     --money-green: #85BB65;
 
   }
+/* 
+  *{
+      border: 1px solid blue;
+  } */
+
+
+
 .card-back {
     background-image:  "/basketball/jordan_back.jpg";
 }
@@ -27,6 +34,39 @@
     background-repeat: no-repeat;
     /* background-image: linear-gradient(ghostwhite, royalblue); */
 }
+.container-show{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 50px auto;
+    width: 80vw;
+    height: 70vw;
+    border-radius: 20px;
+}
+.showImage{
+    width: 48vw;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px;
+    z-index: 1;
+}
+.showInfo{
+    text-align: end;
+    height: 60vw;
+    background-image: linear-gradient(rgba(255,215,0,0), rgb(255, 215, 0, 1), rgba(255,215,0,0));
+
+}
+.showCardValue{
+    /* border-top-style: double;
+    border-right-style: double;
+    border-top-color: rgba(255, 215, 0, 1);
+    border-right-color: rgba(255, 215, 0, 1); */
+    color: var(--money-green);
+    margin: 0 0 5px 0;
+
+}
+
+
+
+
 .new-form {
     border: 1px solid black;
     border-radius: 20px;
@@ -99,3 +139,33 @@ label {
       font-size: .5em;
 
   }
+  .closed-binder{
+    display: grid;
+    margin: 50px auto;
+    width: 100vw;
+    height: 80vw;
+    border-radius: 20px;
+    background-image: url('../website_images/closed_binder.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .open-binder{
+    display: none;
+    margin: 50px auto;
+    width: 100vw;
+    height: 80vw;
+    border-radius: 20px;
+    background: url('../website_images/open_binder.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wood{
+    background: url('../website_images/wood.jpg');
+    background-size: cover;
+}
+.small-margin{
+    margin: 5px;
+}

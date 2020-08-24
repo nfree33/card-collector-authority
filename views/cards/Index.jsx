@@ -8,7 +8,7 @@ class Index extends React.Component {
         return (
             <Default>
                 <div>
-                    <div className="container d-flex p-4 flex-wrap">
+                    <div className="container d-flex p-4 flex-wrap wood">
                         {
                             card.map((card, i) => {
                                 return (

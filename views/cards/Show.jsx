@@ -6,11 +6,16 @@ class Show extends React.Component {
         const { card } = this.props
         return (
             <Default>
-            <div>
-                <h1>{card.name}</h1>
-                <h3><img src={card.imgFront} style={{ width: '40%' }} alt={card.name} /></h3>
-                <h4>${card.value}</h4>
-            </div>
+                <div className="container-show">
+                    <div>
+                        
+                        <img className="showImage" src={card.imgFront} alt={card.name} />
+                    </div>
+                    <div className="showInfo">
+                        <h1 className="showCardValue">${card.value}</h1>
+                        <h3>{card.name}</h3>
+                    </div>
+                </div>
             </Default>
         )
     }
