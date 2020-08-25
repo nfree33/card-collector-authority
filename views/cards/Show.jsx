@@ -13,7 +13,8 @@ class Show extends React.Component {
                         
                     </div>
                     <div className={card.isRookie?'showInfoRookie':'showInfo'}>
-                        <h1 className="showCardValue">${card.value}</h1>
+                    <h1 className={card.value>100?'money':'regularColor'}
+                                        >${card.value}</h1><br />
                         <h3>{card.name}</h3>
                         <h4><a href={`/cards/${card._id}/edit`}>Edit This Card</a></h4>
                     </div>
