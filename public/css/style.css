@@ -5,8 +5,8 @@
 /* 
   *{
       border: 1px solid blue;
-  } */
-
+  }
+ */
 
 
 .card-back {
@@ -37,9 +37,9 @@
 .container-show{
     display: grid;
     grid-template-columns: 60% 40%;
-    margin: 50px auto;
+    margin: 100px auto 0 auto;
     width: 80vw;
-    height: 70vw;
+    height: 80vw;
     border-radius: 20px;
 }
 .showImage{
@@ -63,9 +63,11 @@
     margin: 0 0 5px 0;
 
 }
-
-
-
+.index-height{
+    height: 10vw;
+    font-size-adjust: initial;
+    font-size: 1em;
+}
 
 .new-form {
     border: 1px solid black;
@@ -168,4 +170,21 @@ label {
 }
 .small-margin{
     margin: 5px;
+}
+.bottom-footer{
+    margin-bottom: 0;
+}
+.money{
+    color: var(--money-green)
+}
+@media (max-width: 500px){
+    /* .increase-height{
+        height: 20vw;
+    } */
+    .index-height{
+        font-size: 0.2em;
+    }
+}
+.old-school{
+    filter: grayscale(100%);
 }

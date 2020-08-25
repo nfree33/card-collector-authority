@@ -8,9 +8,10 @@ class Default extends React.Component {
                 <head>
                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
                     <link rel="stylesheet" href="../css/style.css" />
-                    <title>CARDS</title>
+                    <title>OL' SCHOOL</title>
                 </head>
                 <body>
+                    <div className="old-school">
                     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top increase-height">
                         <a className="navbar-brand" href="#">Card Collector's Cooperative</a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,17 +21,17 @@ class Default extends React.Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto">
                                 <li className="nav-item active">
-                                    <a className="nav-link" href="/oldschool">Kick it Old School <span className="sr-only">(current)</span></a>
+                                    <a className="nav-link" href="/cards">Back to the Future <span className="sr-only">(current)</span></a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/cards/new">Add Card</a>
+                                    <a className="nav-link" href="/oldschool/new">Add Card</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/cards">Index</a>
+                                    <a className="nav-link" href="/oldschool">Index</a>
                                 </li>
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Additional Info</a>
+                                        The Skinny</a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a className="dropdown-item" href="/about">About</a>
                                         <a className="dropdown-item" href="/contact-us">Contact Us</a>
@@ -57,6 +58,7 @@ class Default extends React.Component {
                             <h5 className="footer-font">CCC is a part of Freeman Media International</h5>
                             </div>
                         </footer>
+                        </div>
 
 
                     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossOrigin="anonymous"></script>

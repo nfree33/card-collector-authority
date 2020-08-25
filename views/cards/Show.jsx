@@ -14,6 +14,7 @@ class Show extends React.Component {
                     <div className="showInfo">
                         <h1 className="showCardValue">${card.value}</h1>
                         <h3>{card.name}</h3>
+                        <h4><a href={`/cards/${card._id}/edit`}>Edit This Card</a></h4>
                     </div>
                 </div>
             </Default>

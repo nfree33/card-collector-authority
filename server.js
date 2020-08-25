@@ -61,6 +61,9 @@ app.get('/application', (req,res)=>{
 const cardsController = require('./controllers/cards.js');
 app.use('/cards', cardsController)
 
+const oldSchoolController = require('./controllers/oldschool.js');
+app.use('/oldschool', oldSchoolController)
+
 
 // const applicationsController = require('./controllers/applications.js');
 // app.use('/applications', applicationsController)

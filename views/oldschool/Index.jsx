@@ -1,31 +1,31 @@
 const React = require('react');
-const Default = require('../components/Default.jsx')
+const OldSchoolDefault = require('../components/OldSchoolDefault.jsx')
 
 
 class Index extends React.Component {
     render() {
-        const { card } = this.props;
+        const { oldschool } = this.props;
         return (
-            <Default>
+            <OldSchoolDefault>
                 <div>
                     <div className="container d-flex p-4 flex-wrap wood">
                         {
-                            card.map((card, i) => {
+                            oldschool.map((oldschool, i) => {
                                 return (
                                     <div className="card w-25 full-card">
-                                        <div className="index-name index-height"><h3>{card.name}</h3></div><br />
+                                        <div className="index-name index-height"><h3>{oldschool.name}</h3></div><br />
                                         <div style={{ borderRadius: '10px' }} >
-                                            <a href={`/cards/${card._id}`}>
-                                                <img src={card.imgFront} style={{ width: '100%', height: '20vw', borderRadius: '10px' }} alt={card.name} /></a></div><br />
-                                        {/* <h3><img src={card.imgBack} style={{width: '30%'}}alt={card.name}/></h3><br/> */}
-                                        {/* <h4>{card.team}</h4><br />
-                                    <h4>{card.year}</h4><br />
-                                    <h3>{card.sport}</h3><br />
-                                    <h3>Condition: {card.condition}</h3><br />
-                                    <h3>Quantity: {card.quantity}</h3><br /> */}
-                                        <h3 className="money">${card.value}</h3><br />
-                                        <h4>{card.isRookie ? 'Rookie Card' : 'Non-Rookie'}</h4><br />
-                                        {/* <form action={`/cards/${card._id}?_method=DELETE`} method="POST">
+                                            <a href={`/oldschools/${oldschool._id}`}>
+                                                <img src={oldschool.imgFront} style={{ width: '100%', height: '20vw', borderRadius: '10px' }} alt={oldschool.name} /></a></div><br />
+                                        {/* <h3><img src={oldschool.imgBack} style={{width: '30%'}}alt={oldschool.name}/></h3><br/> */}
+                                        {/* <h4>{oldschool.team}</h4><br />
+                                    <h4>{oldschool.year}</h4><br />
+                                    <h3>{oldschool.sport}</h3><br />
+                                    <h3>Condition: {oldschool.condition}</h3><br />
+                                    <h3>Quantity: {oldschool.quantity}</h3><br /> */}
+                                        <h3 className="money">${oldschool.value}</h3><br />
+                                        <h4>{oldschool.isRookie ? 'Rookie Card' : 'Non-Rookie'}</h4><br />
+                                        {/* <form action={`/oldschool/${card._id}?_method=DELETE`} method="POST">
                                         <input type="submit" value="delete"/>
                                     </form> */}
                                         
@@ -49,7 +49,7 @@ class Index extends React.Component {
                                                     </div>
                                                     <div className="modal-footer">
                                                         <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                        <form action={`/cards/${card._id}?_method=DELETE`} method="POST"><input type="submit" className="btn btn-danger delete-button" value="Delete"/></form>
+                                                        <form action={`/oldschool/${card._id}?_method=DELETE`} method="POST"><input type="submit" className="btn btn-danger delete-button" value="Delete"/></form>
                                                         </div>
                                                 </div>
 
@@ -62,7 +62,7 @@ class Index extends React.Component {
                     </div>
 
                 </div>
-            </Default>
+            </OldSchoolDefault>
         )
     }
 }
