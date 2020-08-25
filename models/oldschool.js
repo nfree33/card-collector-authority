@@ -19,5 +19,5 @@ const oldSchoolSchema = new Schema ({
 //CREATE MODEL FROM SCHEMA
 const OldSchool = mongoose.model('OldSchool', oldSchoolSchema);
 
-//EXPORT CARD   MODEL
+//EXPORT MODEL
 module.exports = OldSchool

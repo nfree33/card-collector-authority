@@ -8,23 +8,26 @@ class Index extends React.Component {
         return (
             <Default>
                 <div>
+                    
                     <div className="container d-flex p-4 flex-wrap wood">
+                    {/* <h3 className="diagonalIndex">The Master Index</h3> */}
                         {
                             card.map((card, i) => {
                                 return (
-                                    <div className="card w-25 full-card">
-                                        <div className="index-name index-height"><h3>{card.name}</h3></div><br />
+                                    <div className={card.isRookie?'full-card-rookie card ':'full-card card '}>
+                                        <h4 className="index-name index-height">{card.name}</h4><br />
                                         <div style={{ borderRadius: '10px' }} >
                                             <a href={`/cards/${card._id}`}>
-                                                <img src={card.imgFront} style={{ width: '100%', height: '20vw', borderRadius: '10px' }} alt={card.name} /></a></div><br />
+                                                <img className="indexFront" src={card.imgFront} style={{ width: '100%', height: '20vw', borderRadius: '10px' }} alt={card.name} /></a></div><br />
                                         {/* <h3><img src={card.imgBack} style={{width: '30%'}}alt={card.name}/></h3><br/> */}
                                         {/* <h4>{card.team}</h4><br />
                                     <h4>{card.year}</h4><br />
                                     <h3>{card.sport}</h3><br />
                                     <h3>Condition: {card.condition}</h3><br />
                                     <h3>Quantity: {card.quantity}</h3><br /> */}
-                                        <h3 className="money">${card.value}</h3><br />
-                                        <h4>{card.isRookie ? 'Rookie Card' : 'Non-Rookie'}</h4><br />
+                                        <h3 className={card.value>100?'money':'regularColor'}
+                                        >${card.value}</h3><br />
+                                        {/* <h5>{card.isRookie ? 'Rookie Card' : 'Non-Rookie'}</h5><br /> */}
                                         {/* <form action={`/cards/${card._id}?_method=DELETE`} method="POST">
                                         <input type="submit" value="delete"/>
                                     </form> */}
