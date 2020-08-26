@@ -8,6 +8,7 @@ class About extends React.Component{
             <div>
             <h1>About Us</h1>
             <p>We are a longstanding organization, founded less than one week ago. Our extensive knowledge and experience has led us to being one of the leaders in the trading card world.</p>
+            <p>Create an account, upload your cards, and get ready to trade with people all over the world!</p>
             <p>If you would like to reach out to a team member, please visit our <a href="/contact-us">Contact Us Page.</a></p>
 
             </div>
