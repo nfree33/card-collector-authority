@@ -180,6 +180,7 @@ label {
     background: url('../website_images/wood.jpg');
     background-size: cover;
     border-radius: 10px;
+    width: 90%;
 }
 .small-margin{
     margin: 5px;
