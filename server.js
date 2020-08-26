@@ -52,6 +52,9 @@ app.get('/contact-us', (req, res) => {
 app.get('/application', (req,res)=>{
     res.render('static/Application')
 })
+app.get('/buypage', (req,res)=>{
+    res.render('static/BuyPage')
+})
 
 
 

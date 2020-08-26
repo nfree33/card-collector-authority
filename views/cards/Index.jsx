@@ -8,7 +8,7 @@ class Index extends React.Component {
         return (
             <Default>
                 <div>
-                    
+                    <h1 className="index-header"> The Master Index</h1>
                     <div className="container d-flex p-4 flex-wrap wood">
                     {/* <h3 className="diagonalIndex">The Master Index</h3> */}
                         {
@@ -48,7 +48,7 @@ class Index extends React.Component {
                                                         </button>
                                                     </div>
                                                     <div className="modal-body">
-                                                        <p>This is permanent. You can't just "pkill node npm run dev" to get this back.</p>
+                                                        <p>This is permanent. You can't just "pkill node and npm run dev" to get this back.</p>
                                                     </div>
                                                     <div className="modal-footer">
                                                         <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>

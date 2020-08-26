@@ -94,17 +94,20 @@ label {
     margin: 10px 0px -10px 0px;
     
 }
+.index-header{
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    
+}
 .full-card{
     background-image: linear-gradient(rgb(192, 192, 192), rgb(255, 215, 0, 0.3));
     margin: 2px 5px;
-    padding: 2px;
-    width: 25vw;
+    width: 20vw;
 }
 .full-card-rookie{
     background-image: linear-gradient(rgba(255,215,0,1), rgb(255, 215, 0, 0.3));
     margin: 2px 5px;
-    padding: 2px;
-    width: 25vw;
+    width: 20vw;
 }
 .delete-button{
     background-color: rgba(255,0,0,0.5);
@@ -153,10 +156,10 @@ label {
   .closed-binder{
     display: grid;
     margin: 50px auto;
-    width: 100vw;
-    height: 80vw;
+    width: 70vw;
+    height: 70vw;
     border-radius: 20px;
-    background-image: url('../website_images/closed_binder.jpg');
+    background-image: url('../website_images/homepage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -176,6 +179,7 @@ label {
 .wood{
     background: url('../website_images/wood.jpg');
     background-size: cover;
+    border-radius: 10px;
 }
 .small-margin{
     margin: 5px;
@@ -202,4 +206,12 @@ label {
     color:blue; 
     transform: rotate(340deg);
     transform-origin: left 0 top 100;
+}
+.bottom-border{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black
+}
+.small-pic{
+    height: 10%;
+    width: 10%;
 }
