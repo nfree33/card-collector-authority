@@ -25,7 +25,7 @@ class Show extends React.Component {
                             In Stock: <span class="badge badge-light">{card.quantity}</span>
                            
                         </button></a>
-                        {/* <div className="img-thumbnail small-pic"><img src={card.imgBack}/></div> */}
+
 
                     </div>
                 </div>

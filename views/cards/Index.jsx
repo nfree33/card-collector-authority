@@ -19,18 +19,8 @@ class Index extends React.Component {
                                         <div style={{ borderRadius: '10px' }} >
                                             <a href={`/cards/${card._id}`}>
                                                 <img className="indexFront" src={card.imgFront} style={{ width: '100%', height: '20vw', borderRadius: '10px' }} alt={card.name} /></a></div><br />
-                                        {/* <h3><img src={card.imgBack} style={{width: '30%'}}alt={card.name}/></h3><br/> */}
-                                        {/* <h4>{card.team}</h4><br />
-                                    <h4>{card.year}</h4><br />
-                                    <h3>{card.sport}</h3><br />
-                                    <h3>Condition: {card.condition}</h3><br />
-                                    <h3>Quantity: {card.quantity}</h3><br /> */}
                                         <h3 className={card.value>100?'money':'regularColor'}
                                         >${card.value}</h3><br />
-                                        {/* <h5>{card.isRookie ? 'Rookie Card' : 'Non-Rookie'}</h5><br /> */}
-                                        {/* <form action={`/cards/${card._id}?_method=DELETE`} method="POST">
-                                        <input type="submit" value="delete"/>
-                                    </form> */}
                                         
 
                                         {/* Button that triggers Modal */}
